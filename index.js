@@ -1,5 +1,5 @@
 // Code your solution here:
-function driversWithRevenueOver(arr, revenue) {
-  return arr..map()
-
+function driversWithRevenueOver(drivers, revenue) {
+  const result = drivers.filter(driver => driver.revenue > revenue);
+  return result;
 }
