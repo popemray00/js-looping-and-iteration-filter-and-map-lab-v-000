@@ -12,3 +12,7 @@ function exactMatch(drivers, obj) {
   const match = drivers.filter(driver => driver.name === obj.name || driver.revenue === obj.revenue)
   return match
 }
+
+function exactMatchToList(drivers, obj) {
+  return exactMatch(drivers, revenue).map(driver => driver.name)
+}
