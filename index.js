@@ -7,3 +7,8 @@ function driversWithRevenueOver(drivers, revenue) {
 function driverNamesWithRevenueOver(drivers, revenue) {
   return driversWithRevenueOver(drivers, revenue).map(driver => driver.name)
 }
+
+function exactMatch(driver, obj) {
+  const match = drivers.filter(driver => driver.name === obj.name || driver.revenue === obj.revenue)
+  return match
+}
