@@ -14,5 +14,5 @@ function exactMatch(drivers, obj) {
 }
 
 function exactMatchToList(drivers, obj) {
-  return exactMatch(drivers, revenue).map(driver => driver.name)
+  return exactMatch(drivers, obj).map(driver => driver.name)
 }
